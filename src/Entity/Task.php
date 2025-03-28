@@ -37,6 +37,10 @@ class Task
     )]
     private ?string $content = null;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
 
 
     public function getTitle(): ?string
@@ -52,7 +56,7 @@ class Task
     }
     public function getContent(): ?string
     {
-        return $this->title;
+        return $this->content;
     }
 
     public function setContent(string $content): static
